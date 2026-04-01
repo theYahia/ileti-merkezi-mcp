@@ -1,12 +1,18 @@
 {
   "name": "@theyahia/ileti-merkezi-mcp",
-  "version": "1.0.0",
-  "description": "MCP server for Ileti Merkezi SMS API (Turkey)",
+  "version": "1.0.1",
+  "description": "MCP server for Ileti Merkezi — bulk SMS, OTP messaging (Turkey)",
   "type": "module",
   "main": "dist/index.js",
-  "bin": { "ileti-merkezi-mcp": "dist/index.js" },
-  "files": ["dist"],
-  "engines": { "node": ">=18.0.0" },
+  "bin": {
+    "ileti-merkezi-mcp": "dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "scripts": {
     "build": "tsc",
     "dev": "tsx src/index.ts",
@@ -25,11 +31,28 @@
     "typescript": "^5.7.0",
     "vitest": "^3.1.0"
   },
-  "publishConfig": { "access": "public" },
+  "publishConfig": {
+    "access": "public"
+  },
   "mcpName": "io.github.theYahia/ileti-merkezi-mcp",
-  "keywords": ["mcp", "mcp-server", "model-context-protocol", "claude", "ai", "turkey-api", "ileti-merkezi", "sms", "messaging", "typescript"],
+  "keywords": [
+    "mcp",
+    "mcp-server",
+    "model-context-protocol",
+    "claude",
+    "ai",
+    "turkey-api",
+    "ileti-merkezi",
+    "sms",
+    "messaging",
+    "typescript",
+    "api"
+  ],
   "license": "MIT",
-  "repository": { "type": "git", "url": "https://github.com/theYahia/ileti-merkezi-mcp.git" },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/theYahia/ileti-merkezi-mcp.git"
+  },
   "homepage": "https://github.com/theYahia/ileti-merkezi-mcp#readme",
   "author": "theYahia (https://github.com/theYahia)"
 }
