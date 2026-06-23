@@ -4,12 +4,17 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/), and this project adheres to
 [Semantic Versioning](https://semver.org/).
 
-## [2.0.0] - 2026-06-23
+## [4.0.0] - 2026-06-23
 
-Complete rewrite against the **real** İletiMerkezi v1 JSON API. The pre-2.0
-releases targeted an incorrect API surface (header-based auth + REST-style paths)
-and did not work against the live provider. This release is verified against the
-official İletiMerkezi SDK and API manifest.
+Complete rewrite against the **real** İletiMerkezi v1 JSON API. Every prior npm
+release — 1.0.x and 3.0.0 — targeted a fabricated API surface (header-based
+SHA256/HMAC auth + REST-style `/send-sms`, `/send-bulk-sms`, `/contacts/...`
+paths) and did not work against the live provider. This release is verified
+against the official İletiMerkezi SDK and the live API manifest.
+
+> Versioned **4.0.0** to supersede the broken **3.0.0** that was published to npm
+> (2026-05-03) but never committed to this repository — `latest` must move
+> forward, not back.
 
 ### ⚠️ Breaking changes
 

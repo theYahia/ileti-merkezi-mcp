@@ -1,6 +1,6 @@
 {
   "name": "@theyahia/ileti-merkezi-mcp",
-  "version": "2.0.0",
+  "version": "4.0.0",
   "description": "Type-safe MCP server for the İletiMerkezi SMS API (Turkey) — send SMS/OTP, bulk, delivery reports, sender headers, blacklist, İYS consent",
   "type": "module",
   "main": "dist/index.js",
