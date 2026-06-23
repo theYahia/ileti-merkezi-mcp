@@ -1,7 +1,7 @@
 {
   "name": "@theyahia/ileti-merkezi-mcp",
-  "version": "1.0.1",
-  "description": "MCP server for Ileti Merkezi — bulk SMS, OTP messaging (Turkey)",
+  "version": "4.0.0",
+  "description": "Type-safe MCP server for the İletiMerkezi SMS API (Turkey) — send SMS/OTP, bulk, delivery reports, sender headers, blacklist, İYS consent",
   "type": "module",
   "main": "dist/index.js",
   "bin": {
@@ -14,11 +14,15 @@
     "node": ">=18.0.0"
   },
   "scripts": {
+    "prebuild": "node -e \"require('fs').rmSync('dist',{recursive:true,force:true})\"",
     "build": "tsc",
     "dev": "tsx src/index.ts",
     "start": "node dist/index.js",
+    "typecheck": "tsc --noEmit -p tsconfig.test.json",
     "test": "vitest run",
     "test:watch": "vitest",
+    "lint": "eslint . && prettier --check \"src/**/*.ts\"",
+    "format": "prettier --write \"src/**/*.ts\"",
     "prepublishOnly": "npm run build"
   },
   "dependencies": {
@@ -26,9 +30,13 @@
     "zod": "^3.24.0"
   },
   "devDependencies": {
+    "@eslint/js": "^9.0.0",
     "@types/node": "^22.0.0",
+    "eslint": "^9.0.0",
+    "prettier": "^3.3.0",
     "tsx": "^4.19.0",
     "typescript": "^5.7.0",
+    "typescript-eslint": "^8.0.0",
     "vitest": "^3.1.0"
   },
   "publishConfig": {
@@ -43,7 +51,10 @@
     "ai",
     "turkey-api",
     "ileti-merkezi",
+    "iletimerkezi",
     "sms",
+    "otp",
+    "iys",
     "messaging",
     "typescript",
     "api"
