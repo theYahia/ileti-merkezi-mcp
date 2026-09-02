@@ -1,6 +1,8 @@
-# ileti-merkezi-mcp
+# İleti Merkezi MCP sunucusu — yapay zekâ ile SMS ve toplu SMS gönderimi
 
-MCP server for Ileti Merkezi SMS API (Turkey). Send SMS, bulk SMS, check delivery reports, manage contacts and blacklists via API Key + Hash authentication.
+İleti Merkezi SMS API'sini Claude'a ya da başka bir yapay zekâ asistanına nasıl bağlayacağınızı, kod yazmadan toplu SMS nasıl göndereceğinizi veya teslimat raporlarını sohbet içinden nasıl okuyacağınızı arıyorsanız — aradığınız şey bu. 8 araç: tekil ve toplu SMS, teslimat raporu, bakiye ve kredi sorgusu, onaylı gönderici adları, rehber grupları ve kara liste. "VIP müşterilerime kampanya SMS'i gönder" yazıyorsunuz, gönderiliyor.
+
+> Send single and bulk SMS through the Ileti Merkezi API (Turkey) from your AI assistant — delivery reports, balance, sender names, contact groups and blacklist included.
 
 ## Tools (8)
 
