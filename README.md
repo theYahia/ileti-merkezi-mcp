@@ -53,3 +53,7 @@
 ## License
 
 MIT
+
+---
+
+Telegram: [@vhodvai](https://t.me/vhodvai)
